@@ -80,7 +80,7 @@ class modMyModule extends DolibarrModules
         // for specific css file (eg: /mymodule/css/mymodule.css.php)
         $this->module_parts = array(
             // Set this to 1 if module has its own trigger directory
-            'triggers' => 1,
+            //'triggers' => 1,
             // Set this to 1 if module has its own login method directory
             //'login' => 0,
             // Set this to 1 if module has its own substitution function file
@@ -92,7 +92,7 @@ class modMyModule extends DolibarrModules
             // Set this to 1 if module has its own models directory
             //'models' => 0,
             // Set this to relative path of css if module has its own css file
-            'css' => 'mymodule/css/mycss.css.php',
+            //'css' => 'mymodule/css/mycss.css.php',
             // Set here all hooks context managed by module
             //'hooks' => array('hookcontext1','hookcontext2')
             // Set here all workflow context managed by module
@@ -116,7 +116,7 @@ class modMyModule extends DolibarrModules
         // Minimum version of PHP required by module
         $this->phpmin = array(5, 3);
         // Minimum version of Dolibarr required by module
-        $this->need_dolibarr_version = array(3, 2);
+        $this->need_dolibarr_version = array(3, 5);
         $this->langfiles = array("mymodule@mymodule"); // langfiles@mymodule
         // Constants
         // List of particular constants to add when module is enabled
@@ -171,7 +171,7 @@ class modMyModule extends DolibarrModules
 
         // Dictionnaries
         if (! isset($conf->mymodule->enabled)) {
-            $conf->mymodule=new stdClass();
+        	$conf->mymodule = ( object ) array ();
             $conf->mymodule->enabled = 0;
         }
         $this->dictionnaries = array();

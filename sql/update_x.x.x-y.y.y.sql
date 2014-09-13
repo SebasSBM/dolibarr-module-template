@@ -13,3 +13,8 @@
 --
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+-- * Insert updates for database structure here. For instance:
+--ALTER TABLE llx_mytable ADD `custom_field` varchar(8) NULL DEFAULT NULL;

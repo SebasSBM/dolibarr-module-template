@@ -13,3 +13,12 @@
 --
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+create table llx_provfunds
+(
+        rowid       integer AUTO_INCREMENT  PRIMARY KEY,
+
+        -- * Add the columns you need for your database. For example:
+        --field1      varchar(30)             NOT NULL    DEFAULT 'Hello World',
+        --field2      integer(11)             NULL        DEFAULT '1'
+)ENGINE=innodb;
